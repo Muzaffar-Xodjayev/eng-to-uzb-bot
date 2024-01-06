@@ -33,6 +33,7 @@ async def manage_channel(call: types.CallbackQuery):
         await call.message.delete()
         await intro_admin(call.message)
 
+
 async def remove_channel(call: types.CallbackQuery):
     await call.answer()
     channel_id = call.data.split(":")[1]
